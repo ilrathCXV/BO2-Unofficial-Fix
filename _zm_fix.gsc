@@ -43,6 +43,9 @@
 
 init()
 {
+	setDvar("player_backSpeedScale", 1);
+	setDvar("player_strafeSpeedScale", 1);
+	setDvar("player_sprintStrafeSpeedScale", 1);
 	level thread zombie_health();
 	level thread onPlayerConnect();
 }
@@ -78,18 +81,10 @@ onPlayerSpawned()
 		if (self.initial_spawn == 1)
 		{
 			self.initial_spawn = 0;
-			self thread movement();
 			self thread give_bank_locker_upgrades();
 			self thread rapid_fire();
 		}
 	}
-}
-
-movement()
-{
-	self setclientdvar("player_backSpeedScale", 1);
-	self setclientdvar("player_strafeSpeedScale", 1);
-	self setclientdvar("player_sprintStrafeSpeedScale", 1);
 }
 
 give_bank_locker_upgrades()
@@ -117,7 +112,7 @@ give_bank_locker_upgrades()
 
 rapid_fire()
 {
-	if( getDvar( "rapid_fire") == "" )
+	if( getDvar( "rapid_fire" ) == "" )
 	setDvar( "rapid_fire", 0 );
 	
 	self endon("disconnect");
