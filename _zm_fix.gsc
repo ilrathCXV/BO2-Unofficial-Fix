@@ -94,6 +94,9 @@ give_bank_locker_upgrades()
 	self setdstat( "PlayerStatsByMap", "zm_transit", "weaponLocker", "name", "an94_upgraded_zm+reflex" );
 	self setdstat( "PlayerStatsByMap", "zm_transit", "weaponLocker", "clip", 1023 );
 	self setdstat( "PlayerStatsByMap", "zm_transit", "weaponLocker", "stock", 1023 );
+	self setdstat( "PlayerStatsByMap", "zm_transit", "weaponLocker", "lh_clip", 1023 );
+	self setdstat( "PlayerStatsByMap", "zm_transit", "weaponLocker", "alt_clip", 1023 );
+	self setdstat( "PlayerStatsByMap", "zm_transit", "weaponLocker", "alt_stock", 1023 );
 	self increment_client_stat( "pers_boarding", 0 );
 	self increment_client_stat( "pers_revivenoperk", 0 );
 	self increment_client_stat( "pers_multikill_headshots", 0 );
