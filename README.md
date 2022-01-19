@@ -11,7 +11,8 @@
 - Upgraded AN-94 in locker on Die Rise
 - Upgraded War Machine in locker on Tranzit and Buried
 - All persistent upgrades granted
-- Custom DVAR `rapid_fire` added for "Fast Ray", can be binded and toggled to any key, example: `bind M "toggle rapid_fire 1 0"`
+- Custom DVAR `rapid_fire` added for "Fast Ray" 
+  - Can be binded and toggled to any key, example: `bind M "toggle rapid_fire 1 0"`
 - First box patch
   - Green Run: Ray Gun Mark 2, Monkey Bomb
   - Die Rise: Monkey Bomb
