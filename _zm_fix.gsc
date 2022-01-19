@@ -91,7 +91,14 @@ give_bank_locker_upgrades()
 {
 	flag_wait("initial_blackscreen_passed");
 	self.account_value = 250000;
-	self setdstat( "PlayerStatsByMap", "zm_transit", "weaponLocker", "name", "an94_upgraded_zm+reflex" );
+	if ( level.script == "zm_highrise" )
+	{
+		self setdstat( "PlayerStatsByMap", "zm_transit", "weaponLocker", "name", "an94_upgraded_zm+reflex" );
+	}
+	else
+	{
+		self setdstat( "PlayerStatsByMap", "zm_transit", "weaponLocker", "name", "m32_upgraded_zm" );
+	}
 	self setdstat( "PlayerStatsByMap", "zm_transit", "weaponLocker", "clip", 1023 );
 	self setdstat( "PlayerStatsByMap", "zm_transit", "weaponLocker", "stock", 1023 );
 	self setdstat( "PlayerStatsByMap", "zm_transit", "weaponLocker", "lh_clip", 1023 );
