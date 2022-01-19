@@ -9,4 +9,5 @@
 - Upgraded AN-94 in locker on Die Rise
 - Upgraded War Machine in locker on Tranzit and Buried
 - All persistent upgrades granted
+- First box patch added
 - Custom DVAR `rapid_fire` added for "Fast Ray", can be binded and toggled to any key, example: `bind M "toggle rapid_fire 1 0"`
