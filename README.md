@@ -2,11 +2,11 @@
 
 ## Change Notes
 
-### Gameplay Fixes
+### Bug Fixes
 - Jet Gun and traps now work past round 155
 - Player movement now matches console speed
 
-### Gameplay Optimizations
+### Quality of Life
 - Bank set to full
 - Upgraded AN-94 in locker on Die Rise
 - Upgraded War Machine in locker on Tranzit and Buried
